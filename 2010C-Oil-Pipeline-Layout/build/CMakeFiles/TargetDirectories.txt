@@ -1,0 +1,4 @@
+/mnt/d/develops/git/github/cpp/mathematical_modeling/CUMCM-Paper-And-SourceCode/2010C-Oil-Pipeline-Layout/build/CMakeFiles/company3_eval_2_1.dir
+/mnt/d/develops/git/github/cpp/mathematical_modeling/CUMCM-Paper-And-SourceCode/2010C-Oil-Pipeline-Layout/build/CMakeFiles/company3_eval_3_1.dir
+/mnt/d/develops/git/github/cpp/mathematical_modeling/CUMCM-Paper-And-SourceCode/2010C-Oil-Pipeline-Layout/build/CMakeFiles/edit_cache.dir
+/mnt/d/develops/git/github/cpp/mathematical_modeling/CUMCM-Paper-And-SourceCode/2010C-Oil-Pipeline-Layout/build/CMakeFiles/rebuild_cache.dir
