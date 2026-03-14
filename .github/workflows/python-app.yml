@@ -188,6 +188,23 @@ jobs:
         python3 code1.py || echo "2020B code1 completed with warnings"
         python3 code2.py || echo "2020B code2 completed with warnings"
     
+    - name: Install CMake and build C++ projects for 2010C
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake g++
+        cd "2010C-Oil-Pipeline-Layout"
+        mkdir -p build
+        cd build
+        cmake ..
+        make
+        echo "2010C C++ projects built successfully"
+    
+    - name: Run C++ programs for 2010C
+      run: |
+        cd "2010C-Oil-Pipeline-Layout/build"
+        ./company3_eval_2_1 || echo "2010C company3_eval_2_1 completed with warnings"
+        ./company3_eval_3_1 || echo "2010C company3_eval_3_1 completed with warnings"
+    
     - name: Lint with flake8
       run: |
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics || true
