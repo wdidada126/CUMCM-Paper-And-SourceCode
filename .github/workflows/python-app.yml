@@ -33,6 +33,25 @@ jobs:
         python3 xishu.py
         python3 analysis.py
 
+    - name: Run Python scripts for 2022A
+      run: |
+        cd "2022A波浪能最大输出功率OK/python代码"
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        python3 text/text1.py
+        python3 T1/T1.1.py
+        python3 T1/T1.2.py
+
+    - name: Install Jupyter
+      run: |
+        python3 -m pip install jupyter nbconvert
+
+    - name: Run Jupyter notebooks for 2021C
+      run: |
+        cd "2021C原材料的订购与运输/python代码"
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        jupyter nbconvert --to script --execute p1.ipynb --output p1.py
+        python3 p1.py
+
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
