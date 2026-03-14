@@ -51,6 +51,12 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         jupyter nbconvert --to script --execute p1.ipynb --output p1.py
         python3 p1.py
+  
+    - name: Run Python scripts for 2020B
+      run: |
+        cd "2020B穿越沙漠/python代码"
+        python3 code1.py
+        python3 code2.py
 
     - name: Lint with flake8
       run: |
