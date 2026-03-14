@@ -1,4 +1,54 @@
 # my
+2025年ICPC世界总决赛（第49届，巴库，9月4日）共**12道题**，人类冠军队（圣彼得堡国立大学）解出**11题**，**C题无人队解出**。
+
+### 一、赛题总览（官方原题链接）
+- 官方题目PDF：https://icpc.global/worldfinals/problems/2025-ICPC-World-Finals/2025-ICPC-World-Finals.pdf
+- 官方题解（思路）：https://icpc.global/worldfinals/problems/2025-ICPC-World-Finals/2025-ICPC-Solutions.pdf
+- 开放评测（Kattis）：https://wf25open.kattis.com/
+
+### 二、12道题清单（含难度与考点）
+| 题号 | 题目名称 | 人类解出数 | 核心考点 | 难度 |
+|---|---|---|---|---|
+| A | A-Skew-ed Reasoning | 45队 | 几何、线性代数、计算几何 | 中 |
+| B | Blackboard Game | 8队 | 博弈论、数论、分治 | 难 |
+| C | Bride of Pipe Stream | 0队 | 网络流、凸优化、极小极大、嵌套三分 | 极难 |
+| D | Buggy Rover | 10+队 | 模拟、状态枚举、路径验证 | 中 |
+| E | Delivery Service | 多队 | 最短路、Dijkstra、分层图 | 中 |
+| F | Herding Cats | 多队 | 并查集、图论、连通性 | 中 |
+| G | Lava Moat | 多队 | 计算几何、凸包、扫描线 | 中难 |
+| H | Score Values | 多队 | 动态规划、背包、状态压缩 | 中 |
+| I | Slot Machine | 多队 | 概率、期望、矩阵快速幂 | 中 |
+| J | Stacking Cups | 多队 | 贪心、排序、构造 | 易 |
+| K | Treasure Map | 多队 | 搜索、BFS、状态压缩 | 中 |
+| L | Walking on Sunshine | 多队 | 几何、投影、最短路 | 中难 |
+
+### 三、关键题说明
+#### C题（Bride of Pipe Stream）
+- 题意：管道网络向多个储液罐送液，管道可开/关/半开，求让所有储液罐**最快填满**的配置。
+- 难点：配置无限、连续变量、非凸优化。
+- 解法思路：给储液罐设优先级 → 用DP求最优流量 → 极小极大定理转化 → 嵌套三分找最优优先级。
+- 人类：**0队解出**；AI（OpenAI/Gemini）解出。
+
+#### A题（A-Skew-ed Reasoning）
+- 题意：给定偏斜变换后的点集，还原原始点与变换参数。
+- 考点：线性代数、仿射变换、最小二乘拟合。
+
+#### B题（Blackboard Game）
+- 题意：黑板数字博弈，两人轮流操作，求先手必胜策略。
+- 考点：博弈论SG函数、数论分块、大/小n分治。
+
+### 四、人类赛况（前4名）
+1. 圣彼得堡国立大学：**11题**（冠军）
+2. 东京大学：10题
+3. 北京交通大学：10题
+4. 清华大学：9题
+
+### 五、获取与练习
+1. 直接下载官方PDF（含输入输出样例）。
+2. 在Kattis开放平台提交代码评测：https://wf25open.kattis.com/。
+3. 参考官方题解（Solution Sketches）看思路。
+
+需要我把其中某道题（比如**C题**或**A题**）的**完整解题思路+可运行代码**写给你吗？
 
 ## Gemini ICPC 2025 比赛题目和答案详解
 
