@@ -1,0 +1,47 @@
+# This workflow will install GNU Octave and run Octave tests
+# For more information see: https://github.com/topics/octave
+
+name: Octave Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  octave-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Install GNU Octave
+      run: |
+        sudo apt update
+        sudo apt install -y octave octave-control octave-signal octave-statistics octave-io
+
+    - name: Check Octave version
+      run: |
+        octave --version
+
+    - name: Test 2011B 交巡警服务平台 - Floyd Algorithm
+      working-directory: ./2011B交巡警服务平台/octave
+      run: |
+        octave --no-gui --no-window-system test_floyd.m
+
+    - name: Test 2012A 葡萄酒评价
+      working-directory: ./2012A葡萄酒评价/octave/第一问/第一问1
+      run: |
+        octave --no-gui --no-window-system ../../test_pdztfb.m
+
+    - name: Test 2012C 脑卒中发病
+      working-directory: ./2012C脑卒中发病/octave
+      run: |
+        octave --no-gui --no-window-system test_2012C.m
+
+    - name: Test 2012D 机器人避障问题
+      working-directory: ./2012D机器人避障问题/octave
+      run: |
+        octave --no-gui --no-window-system test_2012D.m
